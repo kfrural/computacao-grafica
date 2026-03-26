@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Computação Gráfica - Exercícios com Three.js</title>
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden;
+            font-family: Arial, sans-serif;
+        }
+        #app {
+            width: 100vw;
+            height: 100vh;
+        }
+        #controls {
+            position: fixed;
+            top: 10px;
+            left: 10px;
+            z-index: 10;
+        }
+        button {
+            margin: 5px;
+            padding: 10px 15px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div id="app"></div>
+    <div id="controls">
+        <button onclick="window.loadExercise(1)">Ex 1</button>
+        <button onclick="window.loadExercise(2)">Ex 2</button>
+        <button onclick="window.loadExercise(3)">Ex 3</button>
+        <button onclick="window.loadChallenge()">Desafio</button>
+    </div>
+    <script type="module" src="/src/main.ts"></script>
+</body>
+</html>
