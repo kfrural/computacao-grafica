@@ -1,0 +1,21 @@
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; width: 100%; height: 100%; overflow: hidden; }
+body {
+  background: radial-gradient(circle at 50% 40%, #04060f 0%, #000 65%, #000 100%);
+  font-family: "Segoe UI", sans-serif;
+}
+#app { width: 100vw; height: 100vh; }
+canvas { display: block; }
+.ui {
+  position: fixed;
+  top: 12px;
+  left: 12px;
+  padding: 10px 12px;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 10px;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.45);
+  font-size: 13px;
+  line-height: 1.4;
+  pointer-events: none;
+}

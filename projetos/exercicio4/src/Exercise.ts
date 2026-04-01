@@ -17,7 +17,7 @@ export const initChallenge = (container: HTMLElement) => {
 
     function animate() {
         requestAnimationFrame(animate);
-        
+
         // Transformação de Escala pulsante
         const scale = 1 + Math.sin(Date.now() * 0.005) * 0.5;
         pyramid.scale.set(scale, scale, scale);
