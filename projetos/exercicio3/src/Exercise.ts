@@ -14,7 +14,7 @@ export const initExercise3 = (container: HTMLElement) => {
     p1.position.x = -4;
     const p2 = new THREE.Mesh(paddleGeom, mat);
     p2.position.x = 4;
-    
+
     const ball = new THREE.Mesh(new THREE.SphereGeometry(0.1, 16, 16), new THREE.MeshBasicMaterial({ color: 0xff0000 }));
 
     scene.add(p1, p2, ball);
